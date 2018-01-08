@@ -13,7 +13,9 @@ export default class ChannelForm extends React.Component {
   render(){
     return(
       <form onSubmit={this.handleSubmit.bind(this)}>
-        <input type="text" ref="channel" />
+        <div className="form-group">
+          <input type="text" ref="channel" className="form-control" placeholder="Add Channel" />
+        </div>
       </form>
     )
   }
