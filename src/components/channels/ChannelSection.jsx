@@ -7,14 +7,14 @@ class ChannelSection extends Component {
   render(){
     return(
       <div>
-        <ChannelList />
-        <ChannelForm />
+        <ChannelList {...this.props} />
+        <ChannelForm {...this.props} />
       </div>
     )
   }
 }
 
-ChannelSection.PropTypes = {
+ChannelSection.propTypes = {
   channels: PropTypes.array.isRequired, 
   setChannel: PropTypes.func.isRequired,
   addChannel: PropTypes.func.isRequired

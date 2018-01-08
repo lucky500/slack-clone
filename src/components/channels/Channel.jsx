@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes form 'prop-types';
+import PropTypes from 'prop-types';
 
 class Channel extends Component {
   handleClick(e){
