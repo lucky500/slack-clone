@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MainComponent from './MainComponent'
 import ChannelSection from './channels/ChannelSection';
 
 class App extends Component {
@@ -31,7 +30,6 @@ class App extends Component {
           addChannel={this.addChannel.bind(this)}
           setChannel={this.setChannel.bind(this)}
         />
-        <MainComponent name="I am main component again" />
       </div>
     );
   }
