@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import MainComponent from './MainComponent'
+import ChannelSection from './channels/ChannelSection';
 
-function App(props){
-  function handleClick() {
-    console.log('I was clicked too!');
+class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      channels = [];
+    };
   }
 
-
-  return (
-    <div>
-      <MainComponent name="I am main component again" />
-      <button onClick={handleClick}>Hello</button>
-    </div>
-  );
+  render(){
+    return (
+      <div>
+        <ChannelSection
+          
+        />
+        <MainComponent name="I am main component again" />
+      </div>
+    );
+  }
 }
 
 export default App;
