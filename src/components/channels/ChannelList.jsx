@@ -20,8 +20,7 @@ class ChannelList extends Component {
 
 ChannelList.propTypes = {
   channels: PropTypes.array.isRequired, 
-  setChannel: PropTypes.func.isRequired,
-  activeChannel: PropTypes.object
+
 }
 
 
